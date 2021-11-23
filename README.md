@@ -1,9 +1,9 @@
 # Four-level-flicker-mitigation-for-OCC
 
 ## Background
-Optical camera communication (OCC) is an optical wireless communication technique that uses a camera as the receiver and visible light source, such as light-emitting diode (LED) luminaires, as the transmitters. 
+Optical camera communication (OCC) is an optical wireless communication technique that uses a camera as the receiver. Light sources such as light-emitting diode (LED) luminaires, can be used as the transmitters. 
 
-In most of the complementary metal-oxide-semiconductor (CMOS) sensors, the rolling shutter is used to enable the pixel to expose row by row or column by column. Therefore, when the LED is modulated much faster than the frame rate, each image can capture multiple data and significantly improve the data rate. In the OCC system, one important issue is flicker — the fast blinking of a light source (if signals are below 200 Hz). Flicker may increase the chance of migraines, headaches, and even repetitive behavior among persons with autism. Therefore, mitigation schemes must be employed to achieve flicker-mitigation transmission in the practical OCC system.
+In most of the complementary metal-oxide-semiconductor (CMOS) sensors, the rolling shutter is used to enable pixels to expose row by row or column by column. Therefore, each image can capture multiple data and significantly boost the data rate when the LED is modulated much faster than the frame rate. In the OCC system, one important issue is visual flicker, which may increase the chance of migraines, headaches, and even repetitive behavior among persons with autism. Therefore, mitigation schemes must be employed to achieve flicker-mitigation transmission in the practical OCC system.
 ## Install
 This project uses Matlab. 
 
@@ -12,7 +12,22 @@ Download the code and data.zip file.
 Unzip the compressed data and move the folders to the directory of code file. 
 
 ## Usage
-tx1_PWN_signal_generation_manchester
+### Transmitter side
+tx1_PWM_signal_generation_proposed.m can generate PAM4 singals with proposed four level flicker mitigation scheme. 
+
+tx1_PWN_signal_generation_manchester.m can generate PAM4 signals with manchester-like flicker mitigation scheme. 
+
+Data packetization, flicker mitigation, PWM modulation, header insertion are included in this file. 
+
+The generated PWM signals can be input to AWG (Channel2, Siglent SDG5162). In this OCC system, a MOSFET based driving circuit is used to drive LED luminaire.
+### Receiver side
+rx1_Decoding.m can decode the received OCC signals and estimate the BER performance. 
+
+Scaling, synchronization, equalization, packet reconstruction, flicker mitigation decoding, and BER calculation are included. 
+
+The attached data were output by a self-developed App. The smartphone (OnePlus 5T) captured the light reflected by a poster and generated an image in YUV format (960x1280). The Y components were used for averaging row by row. For each image frame, the generated 960 elements were coded by base64 and saved in a csv file. 
+
+The floder name was set as pam4_symbolRate_redundantBitLength_blockLength or pam4_symbolRate_manchester. Properly set the parameters (symbol_rate, block_bit_length, flicker_mitigation) when running the decoding file. 
 ## License
 This project is licensed under the MIT License.
 
