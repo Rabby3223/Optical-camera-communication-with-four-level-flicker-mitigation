@@ -22,6 +22,7 @@ Data packetization, flicker mitigation, PWM modulation, header insertion are inc
 The generated PWM signals can be input to AWG (Channel2, Siglent SDG5162). In this OCC system, a MOSFET based driving circuit is used to drive LED luminaire.
 
 <img width="427" height="320" src="https://github.com/Rabby3223/Four-level-flicker-mitigation-for-OCC/blob/main/imgForReadme/2.jpg">
+
 ### Receiver side
 rx1_Decoding.m can decode the received OCC signals and estimate the BER performance. 
 
@@ -32,6 +33,7 @@ The attached data were output by a self-developed App. The smartphone (OnePlus 5
 The floder name was set as pam4_symbolRate_redundantBitLength_blockLength or pam4_symbolRate_manchester. Properly set the parameters (symbol_rate, block_bit_length, flicker_mitigation) when running the decoding file. 
 
 <img height="576" width="364" src="https://github.com/Rabby3223/Four-level-flicker-mitigation-for-OCC/blob/main/imgForReadme/folders.jpg">
+
 ## License
 This project is licensed under the MIT License.
 
