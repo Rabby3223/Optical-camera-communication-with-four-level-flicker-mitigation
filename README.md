@@ -31,7 +31,7 @@ The attached data were output by a self-developed App. The smartphone (OnePlus 5
 
 The floder name was set as pam4_symbolRate_redundantBitLength_blockLength or pam4_symbolRate_manchester. Properly set the parameters (symbol_rate, block_bit_length, flicker_mitigation) when running the decoding file. 
 
-![image](https://github.com/Rabby3223/Four-level-flicker-mitigation-for-OCC/blob/main/imgForReadme/folders.jpg)
+<img height="576" width="364" src="https://github.com/Rabby3223/Four-level-flicker-mitigation-for-OCC/blob/main/imgForReadme/folders.jpg)">
 ## License
 This project is licensed under the MIT License.
 
