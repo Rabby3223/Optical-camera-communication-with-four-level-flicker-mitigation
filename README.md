@@ -27,7 +27,7 @@ Scaling, synchronization, equalization, packet reconstruction, flicker mitigatio
 
 The attached data were output by a self-developed App. The smartphone (OnePlus 5T) captured the light reflected by a poster and generated an image in YUV format (960x1280). The Y components were used for averaging row by row. For each image frame, the generated 960 elements were coded by base64 and saved as a csv file in smartphone. 
 
-![image](https://github.com/Rabby3223/Four-level-flicker-mitigation-for-OCC/blob/main/imgForReadme/2.jpg)
+<img height="150 width="100" src="https://github.com/Rabby3223/Four-level-flicker-mitigation-for-OCC/blob/main/imgForReadme/2.jpg">
 
 The floder name was set as pam4_symbolRate_redundantBitLength_blockLength or pam4_symbolRate_manchester. Properly set the parameters (symbol_rate, block_bit_length, flicker_mitigation) when running the decoding file. 
 
