@@ -40,6 +40,7 @@ This project is licensed under the MIT License.
 base64decode.m is from Plotly Graphing Library for MATLAB.
 
 Cite as:
+
 [1] L. Liu and L. -K. Chen, "Li-poster: Real-time Non-line-of-sight Optical Camera Communication for Hand-held Smartphone Applications," in 2021 Optical Fiber Communications Conference and Exhibition (OFC), 2021, pp. 1-3.
 
 [2] L. Liu and L. Chen, "Four-level Flicker-mitigation Coding Scheme in the Non-line-of-sight Optical Camera Communication System," in 26th Optoelectronics and Communications Conference (OECC), paper M4B.5, Hong Kong, China, Jul. 2021, pp. 1-3.
