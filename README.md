@@ -1,4 +1,4 @@
-# Four-level-flicker-mitigation-for-OCC
+# Optical camera communication with four-level flicker mitigation
 This project includes signal generation and decoding process for a four-level optical camera communicaiton (OCC) system, with a four-level flicker mitigation scheme published in OECC 2021 and captured data. 
 ## Background
 Optical camera communication (OCC) is an optical wireless communication technique that uses a camera as the receiver. Light sources such as light-emitting diode (LED) luminaires, can be used as the transmitters. 
@@ -39,4 +39,6 @@ This project is licensed under the MIT License.
 
 base64decode.m is from Plotly Graphing Library for MATLAB.
 
-Cite as: L. Liu and L. Chen, "Four-level Flicker-mitigation Coding Scheme in the Non-line-of-sight Optical Camera Communication System," in 26th Optoelectronics and Communications Conference (OECC), paper M4B.5, Hong Kong, China, Jul. 2021, pp. 1-3.
+Cite as:
+[1] L. Liu and L. -K. Chen, "Li-poster: Real-time Non-line-of-sight Optical Camera Communication for Hand-held Smartphone Applications," in 2021 Optical Fiber Communications Conference and Exhibition (OFC), 2021, pp. 1-3.
+[2] L. Liu and L. Chen, "Four-level Flicker-mitigation Coding Scheme in the Non-line-of-sight Optical Camera Communication System," in 26th Optoelectronics and Communications Conference (OECC), paper M4B.5, Hong Kong, China, Jul. 2021, pp. 1-3.
